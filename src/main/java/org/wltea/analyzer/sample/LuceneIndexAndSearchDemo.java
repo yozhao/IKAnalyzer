@@ -1,7 +1,7 @@
 /**
  * IK 中文分词  版本 5.0
  * IK Analyzer release 5.0
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
@@ -20,8 +20,8 @@
  * 源代码由林良益(linliangyi2005@gmail.com)提供
  * 版权声明 2012，乌龙茶工作室
  * provided by Linliangyi and copyright 2012 by Oolong studio
- * 
- * 
+ *
+ *
  */
 package org.wltea.analyzer.sample;
 
@@ -53,7 +53,7 @@ import org.wltea.analyzer.lucene.IKAnalyzer;
 /**
  * 使用IKAnalyzer进行Lucene索引和查询的演示
  * 2012-3-2
- * 
+ *
  * 以下是结合Lucene4.0 API的写法
  *
  */
@@ -82,7 +82,7 @@ public class LuceneIndexAndSearchDemo {
       directory = new RAMDirectory();
 
       // 配置IndexWriterConfig
-      IndexWriterConfig iwConfig = new IndexWriterConfig(Version.LUCENE_40, analyzer);
+      IndexWriterConfig iwConfig = new IndexWriterConfig(Version.LUCENE_43, analyzer);
       iwConfig.setOpenMode(OpenMode.CREATE_OR_APPEND);
       iwriter = new IndexWriter(directory, iwConfig);
       // 写入索引
@@ -99,7 +99,7 @@ public class LuceneIndexAndSearchDemo {
 
       String keyword = "中文分词工具包";
       // 使用QueryParser查询分析器构造Query对象
-      QueryParser qp = new QueryParser(Version.LUCENE_40, fieldName, analyzer);
+      QueryParser qp = new QueryParser(Version.LUCENE_43, fieldName, analyzer);
       qp.setDefaultOperator(QueryParser.AND_OPERATOR);
       Query query = qp.parse(keyword);
       System.out.println("Query = " + query);

@@ -1,7 +1,7 @@
 /**
  * IK 中文分词  版本 5.0
  * IK Analyzer release 5.0
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
@@ -20,7 +20,7 @@
  * 源代码由林良益(linliangyi2005@gmail.com)提供
  * 版权声明 2012，乌龙茶工作室
  * provided by Linliangyi and copyright 2012 by Oolong studio
- * 
+ *
  */
 package org.wltea.analyzer.query;
 
@@ -123,8 +123,8 @@ public class SWMCQueryBuilder {
     }
 
     // 借助lucene queryparser 生成SWMC Query
-    QueryParser qp = new QueryParser(Version.LUCENE_40, fieldName, new StandardAnalyzer(
-        Version.LUCENE_40));
+    QueryParser qp = new QueryParser(Version.LUCENE_43, fieldName, new StandardAnalyzer(
+        Version.LUCENE_43));
     qp.setDefaultOperator(QueryParser.AND_OPERATOR);
     qp.setAutoGeneratePhraseQueries(true);
 

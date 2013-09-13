@@ -1,7 +1,7 @@
 /**
  * IK 中文分词  版本 5.0.1
  * IK Analyzer release 5.0.1
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
@@ -20,7 +20,7 @@
  * 源代码由林良益(linliangyi2005@gmail.com)提供
  * 版权声明 2012，乌龙茶工作室
  * provided by Linliangyi and copyright 2012 by Oolong studio
- * 
+ *
  */
 package org.wltea.analyzer.lucene;
 
@@ -47,7 +47,7 @@ public final class IKAnalyzer extends Analyzer {
 
   /**
    * IK分词器Lucene  Analyzer接口实现类
-   * 
+   *
    * 默认细粒度切分算法
    */
   public IKAnalyzer() {
@@ -56,7 +56,7 @@ public final class IKAnalyzer extends Analyzer {
 
   /**
    * IK分词器Lucene Analyzer接口实现类
-   * 
+   *
    * @param useSmart 当为true时，分词器进行智能切分
    */
   public IKAnalyzer(boolean useSmart) {
