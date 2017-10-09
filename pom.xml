@@ -3,7 +3,7 @@
 
 	<groupId>org.wltea.analyzer</groupId>
 	<artifactId>ikanalyzer</artifactId>
-	<version>4.10.0-SNAPSHOT</version>
+	<version>4.10.0</version>
 	<packaging>jar</packaging>
 
 	<name>IKAnalyzer</name>
